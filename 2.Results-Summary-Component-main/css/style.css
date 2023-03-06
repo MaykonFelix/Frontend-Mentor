@@ -1,0 +1,46 @@
+:root {
+    /* PRIMARY */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* GRADIENTS BACKGROUNDS */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* GRADIENTS CIRCLE */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container-left {
+    background: linear-gradient(0deg, var(--Light-royal-blue) 0%, var(--Light-slate-blue) 90%);
+    color: var(--White);
+}
+
+.circle {
+    background: linear-gradient(180deg, var(--Violet-blue) 0%, var(--Persian-blue) 90%);
+}
+
+/* .circle h1 {
+    font-weight: 700;
+} */
