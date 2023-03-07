@@ -1,9 +1,9 @@
 :root {
     /* PRIMARY */
-    --Light-red: hsl(0, 100%, 67%);
+    --Light-red: hsla(0, 100%, 67%);
     --Orangey: hsl(39, 100%, 56%);
-    --Green-teal: hsl(166, 100%, 37%);
-    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Green-teal: hsla(166, 100%, 37%);
+    --Cobalt-blue: hsla(234, 85%, 45%);
 
     /* GRADIENTS BACKGROUNDS */
     --Light-slate-blue: hsl(252, 100%, 67%);
@@ -40,6 +40,30 @@ body {
 .circle {
     background: linear-gradient(180deg, var(--Violet-blue) 0%, var(--Persian-blue) 90%);
 }
+
+.box {}
+
+.box:nth-child(2) {
+    color: var(--Light-red);
+}
+
+.box:nth-child(3) {
+    color: var(--Orangey);
+    /* background-color: var(--Orangey); */
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.box:nth-child(4) {
+    color: var(--Light-red);
+}
+
+.box:nth-child(5) {
+    color: var(--Light-red);
+}
+
+
+
+
 
 /* .circle h1 {
     font-weight: 700;
