@@ -41,16 +41,13 @@ body {
     background: linear-gradient(180deg, var(--Violet-blue) 0%, var(--Persian-blue) 90%);
 }
 
-.box {}
-
 .box:nth-child(2) {
     color: var(--Light-red);
 }
 
 .box:nth-child(3) {
     color: var(--Orangey);
-    /* background-color: var(--Orangey); */
-    background-color: hsla(39, 100%, 56%, 0.05);
+    background-color: hsla(39, 100%, 56%, 0.1);
 }
 
 .box:nth-child(4) {
@@ -61,7 +58,10 @@ body {
     color: var(--Light-red);
 }
 
-
+.container-right {
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 10px 10px 24px -11px rgba(0, 0, 0, 0.1);
+}
 
 
 
