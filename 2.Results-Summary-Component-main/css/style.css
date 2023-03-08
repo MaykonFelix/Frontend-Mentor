@@ -61,13 +61,8 @@ body {
     background-color: hsla(39, 100%, 56%, 0.1);
 }
 
+
 .container-right {
     border-radius: 0px 30px 30px 0px;
     box-shadow: 10px 10px 24px -11px rgba(0, 0, 0, 0.1);
 }
-
-
-
-/* .circle h1 {
-    font-weight: 700;
-} */
