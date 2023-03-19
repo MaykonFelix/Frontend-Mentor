@@ -37,8 +37,18 @@ body {
     color: var(--White);
 }
 
+.container-left h2 {
+    color: var(--Light-lavender);
+
+}
+
 .circle {
     background: linear-gradient(180deg, var(--Violet-blue) 0%, var(--Persian-blue) 90%);
+}
+
+.circle span {
+    color: var(--Light-lavender);
+
 }
 
 .box:nth-child(2) {
