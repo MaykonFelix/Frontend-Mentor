@@ -7,16 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./script/script.js" defer></script>
 
   <style type="text/tailwindcss">
     @layer utilities {
       .box {
-        @apply  flex justify-between w-72 h-14 font-bold items-center p-4 rounded-md;
+        @apply  flex w-72 h-14 font-bold items-center rounded-md;
+      };
+      .container-right img {
+        @apply p-4;
       };
     }
   </style>
-
-
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +28,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="./css/style.css">
-
 
 </head>
 
@@ -55,22 +56,22 @@
         <h2 class="box mt-6 text-2xl font-bold">Summary</h2>
         <div class="box">
           <img src="./assets/images/icon-reaction.svg" alt="Image Rain">
-          <p>Reaction</p>
+          <h2>Reaction</h2>
           <p>80 / <span>100</span></p>
         </div>
         <div class="box">
           <img src="./assets/images/icon-memory.svg" alt="Image Memory">
-          <p>Memory</p>
+          <h2>Memory</h2>
           <p> 92 / <span>100</span></p>
         </div>
         <div class="box">
           <img src="./assets/images/icon-verbal.svg" alt="Image Verbal">
-          <p>Verbal</p>
+          <h2>Verbal</h2>
           <p>61 / <span>100</span></p>
         </div>
         <div class="box">
           <img src="./assets/images/icon-visual.svg" alt="Image Visual">
-          <p>Visual</p>
+          <h2>Visual</h2>
           <p>72 / <span>100</span></p>
         </div>
         <button class="w-72 h-14 rounded-full flex justify-center items-center mb-6">Continue</button>
