@@ -44,6 +44,7 @@ body {
 
 .circle {
     background: linear-gradient(180deg, var(--Violet-blue) 0%, var(--Persian-blue) 90%);
+    border-radius: 100%;
 }
 
 .circle span {
