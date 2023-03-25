@@ -18,4 +18,12 @@ document.getElementById("imgTag4").setAttribute("src", myJson[3].icon);
 
 console.log(myJson);
 
-number_principal.innerHTML = "Teste";
+var total = 0;
+
+for (var i = 0; i < myJson.length; i++) {
+  total += myJson[i].score;
+}
+var media = Math.round(total / myJson.length);
+console.log(media);
+
+number_principal.innerHTML = media;
