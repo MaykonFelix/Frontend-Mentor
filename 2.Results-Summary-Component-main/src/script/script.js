@@ -16,13 +16,11 @@ document.getElementById("imgTag2").setAttribute("src", myJson[1].icon);
 document.getElementById("imgTag3").setAttribute("src", myJson[2].icon);
 document.getElementById("imgTag4").setAttribute("src", myJson[3].icon);
 
-console.log(myJson);
-
 var total = 0;
-
-for (var i = 0; i < myJson.length; i++) {
+for (let i = 0; i < myJson.length; i++) {
   total += myJson[i].score;
 }
+
 var media = Math.round(total / myJson.length);
 console.log(media);
 
