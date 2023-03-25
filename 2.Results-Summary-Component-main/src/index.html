@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script/script.js" defer></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./script/script.js" defer></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .box {
+          @apply flex w-72 h-14 font-bold items-center rounded-md;
+        }
+        .container-right img {
+          @apply p-4;
+        }
+      }
+    </style>
 
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .box {
-        @apply  flex w-72 h-14 font-bold items-center rounded-md;
-      };
-      .container-right img {
-        @apply p-4;
-      };
-    }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;1,800&display=swap"
-    rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./css/styleglobal.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Results summary component</title>
-  <link rel="stylesheet" href="./css/styleglobal.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <body>
+    <main
+      class="border-solid border-4 border-red-500 w-screen h-screen flex items-center justify-center"
+    >
+      <div class="flex items-center justify-center text-lg w-[750px] h-[500px]">
+        <!-- Container Left -->
+        <div
+          class="container-left items-center justify-center flex flex-col w-1/2 h-full rounded-3xl p-12"
+        >
+          <h2 class="font-bold mb-12 text-2xl">Your Result</h2>
+          <!-- Circle -->
+          <div class="circle w-[200px] h-[200px] flex flex-col justify-center">
+            <h1 id="number_principal" class="text-6xl font-extrabold">76</h1>
+            <span class="font-medium"> of 100</span>
+          </div>
 
-</head>
-
-<body>
-  <main class="border-solid border-4 border-red-500 w-screen h-screen flex items-center justify-center">
-
-    <div class="flex items-center justify-center text-lg w-[750px] h-[500px] ">
-
-      <!-- Container Left -->
-      <div class="container-left items-center justify-center flex flex-col w-1/2 h-full rounded-3xl p-12">
-
-        <h2 class="font-bold mb-12 text-2xl">Your Result</h2>
-        <!-- Circle -->
-        <div class="circle  w-[200px] h-[200px] flex flex-col justify-center">
-          <h1 id="number_principal" class="text-6xl font-extrabold"> 76</h1>
-          <span class="font-medium"> of 100</span>
+          <h1 class="text-2xl font-bold">Great</h1>
+          <h4 class="font-medium p-6 text-base">
+            You scored higher than 65% of the people who have taken these tests.
+          </h4>
         </div>
 
-        <h1 class="text-2xl  font-bold"> Great</h1>
-        <h4 class="font-medium p-6 text-base"> You scored higher than 65% of the people who have taken these tests.</h4>
+        <!-- Container Right -->
+        <div
+          class="container-right flex flex-col justify-center items-center w-1/2 h-full justify-around"
+        >
+          <h2 class="box mt-6 text-2xl font-bold">Summary</h2>
+          <div class="box">
+            <img id="imgTag1" src="" alt="Image" />
+            <h2 id="Title1"></h2>
+            <p id="numberTag1"></p>
+            <span>/ 100</span>
+          </div>
+          <div class="box">
+            <img id="imgTag2" src="" alt="Image" />
+
+            <h2 id="Title2"></h2>
+            <p id="numberTag2"></p>
+            <span>/ 100</span>
+          </div>
+          <div class="box">
+            <img id="imgTag3" src="" alt="Image" />
+            <h2 id="Title3"></h2>
+            <p id="numberTag3"></p>
+            <span>/ 100</span>
+          </div>
+          <div class="box">
+            <img id="imgTag4" src="" alt="Image" />
+            <h2 id="Title4"></h2>
+            <p id="numberTag4">0</p>
+            <span>/ 100</span>
+          </div>
+          <button
+            class="w-72 h-14 rounded-full flex justify-center items-center mb-6"
+          >
+            Continue
+          </button>
+        </div>
+
+        <script type="module" src="./script/script.js"></script>
       </div>
-
-      <!-- Container Right -->
-      <div class="container-right flex flex-col justify-center items-center w-1/2 h-full justify-around">
-
-        <h2 class="box mt-6 text-2xl font-bold">Summary</h2>
-        <div class="box">
-          <img id="imgTag1" src="" alt="Image">
-          <h2>Reaction</h2>
-          <p id="numberTag1">0</p><span>/ 100</span>
-        </div>
-        <div class="box">
-          <img id="imgTag2" src="" alt="Image">
-
-          <h2>Memory</h2>
-          <p id="numberTag2">0</p><span>/ 100</span>
-
-        </div>
-        <div class="box">
-          <img id="imgTag3" src="" alt="Image">
-          <h2>Verbal</h2>
-          <p id="numberTag3">0</p><span>/ 100</span>
-
-        </div>
-        <div class="box">
-          <img id="imgTag4" src="" alt="Image">
-          <h2 >Visual</h2>
-          <p id="numberTag4">0</p><span>/ 100</span>
-        </div>
-        <button class="w-72 h-14 rounded-full flex justify-center items-center mb-6">Continue</button>
-      </div>
-
-      <script type="module" src="./script/script.js"></script>
-
-    </div>
-  </main>
-
-
-</body>
-
+    </main>
+  </body>
 </html>
