@@ -89,15 +89,15 @@ body {
   background-color: hsla(234, 85%, 45%, 0.1);
 }
 
-
 .box p {
   color: var(--Dark-gray-blue);
-
 }
 
 .box h2 {
+  
 }
 
 .box span {
   color: var(--Light-lavender);
+  padding-right: 5px;
 }
