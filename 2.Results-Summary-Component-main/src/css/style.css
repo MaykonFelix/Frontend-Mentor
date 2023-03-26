@@ -97,3 +97,11 @@ body {
   color: var(--Light-lavender);
   padding-right: 5px;
 }
+
+.subtitle {
+  color: var(--Light-lavender);
+}
+
+.box-title {
+  color: var(--Dark-gray-blue);
+}
