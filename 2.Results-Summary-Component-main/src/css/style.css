@@ -71,30 +71,26 @@ body {
 
 .box:nth-child(2) {
   color: var(--Light-red);
-  background-color: hsla(0, 100%, 67%, 0.1);
+  background-color: hsla(0, 100%, 67%, 0.05);
 }
 
 .box:nth-child(3) {
   color: var(--Orangey);
-  background-color: hsla(39, 100%, 56%, 0.1);
+  background-color: hsla(39, 100%, 56%, 0.05);
 }
 
 .box:nth-child(4) {
   color: var(--Green-teal);
-  background-color: hsla(166, 100%, 37%, 0.1);
+  background-color: hsla(166, 100%, 37%, 0.05);
 }
 
 .box:nth-child(5) {
   color: var(--Cobalt-blue);
-  background-color: hsla(234, 85%, 45%, 0.1);
+  background-color: hsla(234, 85%, 45%, 0.05);
 }
 
 .box p {
   color: var(--Dark-gray-blue);
-}
-
-.box h2 {
-  
 }
 
 .box span {
